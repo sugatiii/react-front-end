@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .top-nav{
+        @apply hidden space-x-4 md:flex
+    }
+
+    .header-nav{
+        @apply flex items-center justify-between h-20 max-w-[1240px] mx-auto px-4
+    }
+
+    .navbar-left{
+        @apply font-bold border-b border-gray-300
+    }
+
+    .left-nav{
+        @apply fixed left-0 top-0 h-full w-[60%] border-r border-r-gray-300 bg-[#F4E8C1] ease-in-out duration-500 md:hidden
+    }
+    
+    .left-nav1{
+        @apply fixed left-[-100%] top-0 h-full w-[60%] border-r border-r-gray-300 bg-[#F4E8C1] ease-in-out duration-500
+    }
+
+    .size-img-nav{
+        @apply w-[50px] h-[50px] object-cover rounded-full
+    }
+    .size-img{
+        @apply w-[100px] h-[100px] object-cover rounded-full
+    }
+    .linkHeader {
+        @apply cursor-pointer text-sm text-black transition-[.4s] hover:text-[#259b7d]
+    }
+
+    .dropdown-new{
+        @apply relative inline-block
+    }
+
+    .dropdown-content-new{
+        @apply hidden top-24 absolute bg-gray-100 min-w-[100px] shadow-md pl-5 pr-5 pt-2 z-50
+    }
+
+    .dropdown-new:hover .dropdown-content-new {
+        @apply block
+    }
+
+    .logo{
+        @apply font-bold text-[#d1be80]
+    }
+
+    .logo2{
+        @apply text-[#259b7d]
+    }
+
+    .profile{
+        @apply hidden md:flex
+    }
+
+    .space-left-nav{
+        @apply space-y-5 pt-10 pl-4 pr-4
+    }
+
+    .nav-select{
+        @apply flex items-center font-bold
+    }
+}
